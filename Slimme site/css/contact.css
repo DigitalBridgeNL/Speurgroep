@@ -1,0 +1,37 @@
+/* Contact */
+
+.contactLeft {
+	float:left;
+	display: inline;
+	width: 345px;
+	height: 220px;
+	background-image:url(../images/contact_frame.png);
+}
+
+.contactLeft p {
+	margin-left: 15px;
+	padding-bottom: 20px;
+	font-weight: 900;
+}
+
+.contactLeft table {
+	border: none;
+	margin-left: 15px;
+}
+
+.contactLeft table tbody tr td	{
+	padding-left: 0px;
+}
+
+.contactLeft table tbody tr:nth-child(even) {background-color: #F9F9F9;}
+.contactLeft table tbody tr:nth-child(odd) {background-color: #F9F9F9;}
+
+#contactSG tr td:first-child + td {
+	padding-left: 72px;
+}
+
+.contactRight {
+	float:right;
+	display: inline;
+	width: 290px;
+}

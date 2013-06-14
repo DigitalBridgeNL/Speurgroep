@@ -1,0 +1,40 @@
+/* Left Navigation Menu*/
+.leftNavigation {
+	float: left;
+	width: 185px;
+	border:none;
+	font-size: 10px;
+	padding-left: 15px;
+}
+
+.leftNavigation ul{
+	list-style-type: none;
+	padding:0;
+}
+
+.leftNavigation ul li{
+	text-align: left;
+	padding-top: 4px;
+}
+
+/* Content */
+#pageContent {
+	float: left;
+	width: 450px;
+	font-size: 10px;
+}
+
+#pageContent p:first-child {
+	text-align: center;
+}
+
+/* Vragen */
+
+.vragenLink {
+	float:left;
+	width: 289px;
+	text-align: center;
+}
+
+
+
