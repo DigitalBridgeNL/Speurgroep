@@ -47,7 +47,7 @@
     	$("#table-scroll table").delegate('tr', 'click', function() {
 			var id = $(this).attr('id');
 			alert(id);
-			window.location.href = '?page=' + id +'';
+			window.location.href = '?page=' + id;
 		});
 	});
 </script>
