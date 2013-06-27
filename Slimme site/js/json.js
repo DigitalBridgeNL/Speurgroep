@@ -28,7 +28,7 @@ function getAllpages(){
 			console.log(data); // log de data ter controle in het console
 				var i, j, strHTML = ""; // i = het aantal records, j is de specifieke kolom van het record, strHTML is de string van html dat door javascript aangemaakt zal worden
 				for (i = 0; i < data.length; i += 1) {
-					strHTML += "<tr id=" + data[i]['id']+ "'><td>" + data[i]['catname'] + "</td><td>" + data[i]['pagename']+"</td></tr>";
+					strHTML += "<tr id=" + data[i]['id']+ "><td>" + data[i]['catname'] + "</td><td>" + data[i]['pagename']+"</td></tr>";
 					}
 					$("#pagesTable").html(strHTML); // Voeg de string van html toe aan het element met ID Pages.
 					});
