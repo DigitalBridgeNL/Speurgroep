@@ -17,6 +17,21 @@ include('includes/DBinteraction.php');
   	</table>
 </div>
 <div class="contactRight">
-dad
+<p> Heeft u vragen aan Speurgroep?
+<p> Kies een onderwerp </p>
+<ul>
+	<li>
+    Adverteren
+    </li>
+    <li>
+    Betalen
+    </li>
+    <li>
+    Problemen
+    </li>
+    <li>
+    Overige vragen
+    </li>
+</ul>
 </div>      
 <?php include('includes/footer.php');?>

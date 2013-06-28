@@ -33,5 +33,19 @@
 .contactRight {
 	float:right;
 	display: inline;
-	width: 290px;
+	width: 345px;
+	background-image:url(../images/contact_frame.png);
+	height: 220px;
+}
+
+.contactRight p:first-child {
+	font-weight: 900;
+}
+
+.contactRight p {
+	margin-left: 15px;
+}
+
+.contactRight ul {
+	margin-left: 25px;
 }
