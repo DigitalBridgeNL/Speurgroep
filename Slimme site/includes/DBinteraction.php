@@ -115,5 +115,23 @@
 		closeDB();
   }
   
+  function get_contentPageWithoutTitle($pageID)
+  {
+	  	openDB();
+	  	// Haal JSON op en plaats in variabele
+		// Voer een query uit dat de content van de page ophaalt.
+		$resultContent = mysql_query("SELECT * FROM page WHERE id='$pageID'") or die(mysql_error());
+		$rows = array();
+		$row = mysql_fetch_array($resultContent);
+		
+		if ($row) 
+		{
+			$content    = $row['tekst'];
+			echo $content;
+			
+		}
+		closeDB();
+  }
+  
   
 ?>
