@@ -1,0 +1,65 @@
+/* login */
+
+.loginLeft {
+	float:left;
+	display: inline;
+	width: 345px;
+	height: 220px;
+	background-image:url(../images/contact_frame.png);
+}
+
+.loginLeft p:first-child {
+	font-weight: 900;
+}
+
+.loginLeft p {
+	margin-left: 15px;
+	padding-bottom: 20px;
+	margin-right: 15px;
+}
+
+.loginRight table {
+	border: none;
+	margin-left: 15px;
+}
+
+.loginRight input[type="email"] {
+	width: 230px;
+}
+
+.loginRight input[type="image"] {
+	float: right;
+}
+
+.loginRight table tbody tr td	{
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.loginRight table tbody tr:nth-child(even) {background-color: #F9F9F9;}
+.loginRight table tbody tr:nth-child(odd) {background-color: #F9F9F9;}
+
+#loginSG tr td:first-child + td {
+	padding-left: 72px;
+}
+
+.loginRight {
+	float:right;
+	display: inline;
+	width: 345px;
+	background-image:url(../images/contact_frame.png);
+	height: 220px;
+}
+
+.loginRight p:first-child {
+	font-weight: 900;
+}
+
+.loginRight p {
+	margin-left: 15px;
+}
+
+.loginRight ul {
+	margin-left: 25px;
+}
