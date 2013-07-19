@@ -1,6 +1,5 @@
 <?php
 include('includes/header.php');
-include('includes/DBinteraction.php');
 ?>
 <script>
  $( window ).load(function() {
@@ -35,5 +34,4 @@ include('includes/DBinteraction.php');
 <p>Heeft u een vraag? </p>
 <a href="contact.php" >Klik hier</a>
 </div>
-</body>
-</html>
+<?php include('includes/footer.php');?>
