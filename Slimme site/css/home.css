@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+.advLeft div, .advRight div, .advBottom div {
+	background-image:url(../images/vlak.png);
+	background-repeat:no-repeat;
+	background-size: cover;	
+}
+
+.advLeft {
+	float: left;
+	width: 200px;
+	border: none;
+	margin-right: 15px;
+}
+
+.advLeft div:first-child, .advRight div:first-child {
+	margin-top: 0px;
+}
+
+.advLeft div {
+	margin-top: 10px;
+	width: 199px;
+	height: 300px;
+}
+
+.intro {
+	float: left;
+	display: inline;
+	width: 496px;
+}
+
+.intro p:first-child {
+	text-align:center;
+}
+
+.consumenten {
+	float: left;
+}
+
+.imageLeft {
+	width: 230px;
+	height: 75px;
+}
+
+.bedrijven {
+	float: right;
+}
+
+.imageRight {
+	width: 230px;
+	height: 75px;
+}
+	
+
+.advRight {
+	margin-left: 15px;
+	float: right;
+	display: inline;
+	width: 200px;
+	border: none;
+}
+
+.advRight div {
+	margin-top: 10px;
+	width: 199px;
+	height: 300px;
+}
+
+.advBottom {
+	margin-top: 10px;
+	width: 100%;
+	height: 150px;	
+}
+
+.advBottom div:first-child {
+	margin-left: 0px;
+	
+}
+
+.advBottom div {
+	margin-left: 12px;
+	float: left;
+	width: 24%;
+	padding-right: 10px;
+	height: 100%;
+}
