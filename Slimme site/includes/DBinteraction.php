@@ -4,12 +4,12 @@
 //----------------------------------------------------------------------Algemene functies
   function openDB()
   {
-      $DB = mysql_connect("localhost", "dragon", "sjetel");
+      $DB = mysql_connect("db2.hosting2go.nl", "m1_4ebf03ad", "4Lw3zYTx9S");
       if (!$DB)
       {
         die('Could not connect to the database server: ' . mysql_error());
       }
-      mysql_select_db("speurgroep", $DB) or die('Could not connect to the database. Database may not exist.' . mysql_error());
+      mysql_select_db("m1_4ebf03ad", $DB) or die('Could not connect to the database. Database may not exist.' . mysql_error());
   }
 
   function closeDB()
@@ -132,6 +132,22 @@
 		}
 		closeDB();
   }
+  
+  function generateActivatiecode($length = 10) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, strlen($characters) - 1)];
+    }
+    return $randomString;
+	}
+	
+ function sendActivationMail($to, $activatiecode) {
+	 $subject = "Activatie code";
+	 $body = "Hoi,\n\nUw activatie code is $activatiecode";
+		mail($to, $subject, $body);
+ }
+
   
   
 ?>
