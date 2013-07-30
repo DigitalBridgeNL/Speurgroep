@@ -25,7 +25,7 @@
 <?php include('includes/DBinteraction.php'); ?>
 <div class="center">
 <div class="logo">
-<img class="logo" src="../images/logo_2.png" width="200px" height="64px" />
+<img src="../images/logo_2.png" width="200px" height="64px" />
 </div>
 
 <nav class="mainNav">
