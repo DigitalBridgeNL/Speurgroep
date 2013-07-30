@@ -1,9 +1,9 @@
 <?php
 ob_start();
-$host="localhost"; // Host name
-$username="dragon"; // Mysql username
-$password="sjetel"; // Mysql password
-$db_name="speurgroep"; // Database name
+$host="db2.hosting2go.nl"; // Host name
+$username="m1_4ebf03ad"; // Mysql username
+$password="4Lw3zYTx9S"; // Mysql password
+$db_name="m1_4ebf03ad"; // Database name
 $tbl_name="user"; // Table name
 
 // Connect to server and select databse.
@@ -24,6 +24,7 @@ $result=mysql_query($sql) or die('Error : '.mysql_error());
 
 // Mysql_num_row is counting table row
 $count=mysql_num_rows($result);
+$row = mysql_fetch_assoc($result);
 
 // If result matched $myusername and $mypassword, table row must be 1 row
 if($count==1){
@@ -31,9 +32,7 @@ if($count==1){
 /*session_register("myusername");
 session_register("mypassword");*/
 session_start();
-$_SESSION["myusername"]= $_POST['email'];
-$_SESSION["mypassword"]= $_POST['wachtwoord'];
-
+$_SESSION["myusername"]= $row['userID'];
 
 header("location:../mijnSpeurgroep.php");
 }
